@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Arbitrage Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <h1>Crypto Arbitrage Dashboard</h1>
+  </header>
+
+  <main class="container">
+    <section class="price-table">
+      <h2>Live Prices</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Exchange</th>
+            <th>Pair</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Binance</td>
+            <td>BTC/USDT</td>
+            <td class="binBTCText">$42,000</td>
+          </tr>
+          <tr>
+            <td>Coinbase</td>
+            <td>BTC/USDT</td>
+            <td class="coinBTCTEXT">$42,200</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="opportunities">
+      <h2>Arbitrage Opportunities</h2>
+      <div class="alert">
+        🔔 Profit Opportunity: Buy on Binance ($42,000) and Sell on Coinbase ($42,200). Spread: 0.47%.
+      </div>
+    </section>
+
+    <section class="chart">
+      <h2>Historical Trends</h2>
+      <div class="chart-placeholder">[Chart Placeholder]</div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Crypto Arbitrage Tracker. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

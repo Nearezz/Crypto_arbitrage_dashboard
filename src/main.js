@@ -1,4 +1,4 @@
-import { startBinanceWebSocket } from "./modules/binanceWebSocket.js";
-import { startCoinbaseWebSocket } from "./modules/coinbaseWebSocket.js";
-startBinanceWebSocket()
-startCoinbaseWebSocket()
+import { binanceWebSocket } from "./webSocketClass.js"
+
+const binanceWS = new binanceWebSocket()
+binanceWS.connect()

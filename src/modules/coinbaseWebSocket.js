@@ -12,7 +12,6 @@ const coinbasePriceText = document.querySelector(".coinBTCText")
 export function startCoinbaseWebSocket(){
     coinbaseSocket = new WebSocket(coinbaseEndpoint)
     coinbaseSocket.onopen = () => {
-        console.log("connection success")
         const subScribeMessage = {
             type:"subscribe",
             channels: [{ name: "ticker", product_ids: ["BTC-USDT"] }]

@@ -1,3 +1,4 @@
+const alertText = document.querySelector(".alert");
 const exchangeData = new Map([
     ["coinbasePrice", 0],
     ["binancePrice", 0],
@@ -5,14 +6,20 @@ const exchangeData = new Map([
     ["sellPrice", 0] 
 ]);
 
-export function inputPrices(coinbasePrice, binancePrice) {
+
+
+export function updateDashbord(coinbasePrice, binancePrice) {
     exchangeData.set("coinbasePrice", coinbasePrice);
-    exchangeData.set("binancePrice", binancePrice)
-    exchangeData.set("buyPrice",Math.max(coinbasePrice,binancePrice))
-    exchangeData.set("sellPrice",Math.min(coinbasePrice,binancePrice))
+    exchangeData.set("binancePrice", binancePrice);
+    let spread = ((exchangeData.get("sellPrice") - exchangeData.get("buyPrice")) / exchangeData.get("buyPrice")) * 100;
 
-    console.log(exchangeData)
+    if (coinbasePrice > binancePrice) {
+        exchangeData.set("buyPrice", binancePrice);
+        exchangeData.set("sellPrice", coinbasePrice);
+        alertText.textContent = `🔔 Profit Opportunity: Buy on Binance ${binancePrice} and Sell on Coinbase ${coinbasePrice}. Spread: ${spread.toFixed(2)}%.`;
+    } else if (coinbasePrice < binancePrice) {
+        exchangeData.set("buyPrice", coinbasePrice);
+        exchangeData.set("sellPrice", binancePrice);
+        alertText.textContent = `🔔 Profit Opportunity: Buy on Coinbase ${coinbasePrice} and Sell on Binance ${binancePrice}. Spread: ${spread.toFixed(2)}%.`;
+    }
 }
-
-
- 

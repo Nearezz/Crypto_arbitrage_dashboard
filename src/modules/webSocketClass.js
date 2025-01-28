@@ -25,9 +25,6 @@ class webSocketManager {
     } // setting the websockets methods to the class
 
 
-    onOpen() {
-        console.log(`connected to ${this.url}`)
-    }
 
     onError = (error) => {
         console.error("binance web socket has an error: ",error)

@@ -9,7 +9,7 @@ class webSocketManager {
         this._reconnectAttempts = 0;
         this._maxReconnectAttempts = 10;
         this._lastUpdated = 0;
-        this._updateInterval = 500;
+        this._updateInterval = 100;
 
         this._price = 0;
     }
@@ -61,7 +61,6 @@ export class binanceWebSocket extends webSocketManager {
             if (data.e === "24hrTicker") { // Binance
                 BinancePriceText.textContent = parseFloat((data.c)).toFixed(2)
                 this._price =  parseFloat(data.c).toFixed(2)
-                console.log(`Binance received update at ${performance.now()}ms`);
                 this._lastUpdated = currentTime
             } 
         }

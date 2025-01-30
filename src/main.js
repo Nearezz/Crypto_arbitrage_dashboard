@@ -48,10 +48,18 @@ const spreadChart = new Chart(ctx, {
                         locale: enUS 
                     }
                 },
-                parsing: false 
+                parsing: false,
+                title: {
+                    display: true,
+                    text: 'Time'
+                }
             },
             y: {
-                beginAtZero: false
+                beginAtZero: false,
+                title: {
+                    display: true,
+                    text: 'Spread Value'
+                }
             }
         }
     }
@@ -71,6 +79,9 @@ setInterval(async() => {
     const currentTime = new Date()
     updateChart(spreadChart,currentTime,latestSpread)
 },3000)
+
+
+
 
 
 

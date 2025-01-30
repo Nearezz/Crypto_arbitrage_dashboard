@@ -70,7 +70,7 @@ setInterval(async() => {
     const latestSpread = getSpread()
     const currentTime = new Date()
     updateChart(spreadChart,currentTime,latestSpread)
-})
+},3000)
 
 
 

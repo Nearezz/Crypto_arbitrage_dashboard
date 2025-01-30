@@ -661,7 +661,7 @@ setInterval(async ()=>{
     const latestSpread = (0, _arbtriageSpreadJs.getSpread)();
     const currentTime = new Date();
     updateChart(spreadChart, currentTime, latestSpread);
-});
+}, 3000);
 
 },{"./modules/webSocketClass.js":"d0kGw","./modules/arbtriageSpread.js":"5fFNp","chartjs-adapter-date-fns":"hmLQz","date-fns/locale":"lASMG","chart.js":"ipU8D"}],"d0kGw":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");

@@ -1,15 +1,15 @@
-Crypto Arbitrage Dashboard
+# Crypto Arbitrage Dashboard
 
-Overview
+## Overview
 
-The Crypto Arbitrage Dashboard is a web-based application designed to monitor cryptocurrency prices across multiple exchanges and identify arbitrage opportunities. The dashboard provides real-time price data, highlights potential profit opportunities, and visualizes the spread trend over time.
+The **Crypto Arbitrage Dashboard** is a powerful web-based tool designed to track cryptocurrency prices across multiple exchanges and identify profitable arbitrage opportunities. With real-time price updates and a focus on key metrics, the dashboard enables users to spot and act on price discrepancies between exchanges quickly. It also visualizes the spread trends over time to help users make more informed decisions.
 
-Features
+## Features
 
-Live Prices: Displays the current BTC/USDT prices from Binance and Coinbase.
+- **Live Price Feed**: Real-time BTC/USDT price data pulled from **Binance** and **Coinbase**.
+- **Arbitrage Opportunities**: Highlights potential arbitrage profits based on price differences between exchanges.
+- **Spread Graph**: A visual representation of the price spread over time, allowing users to track trends and market behavior.
 
-Arbitrage Opportunities: Highlights potential arbitrage profits based on price differences.
+## Live Demo
 
-Spread Graph: Visual representation of the spread value over time.
-
-A live demonstration can be found here: https://crypto-arbitrage-dashboard-iota.vercel.app/
+Try the live version of the dashboard [here](https://crypto-arbitrage-dashboard-iota.vercel.app/).

@@ -2,7 +2,7 @@
 
 ## Overview
 
-The **Crypto Arbitrage Dashboard** is a powerful web-based tool designed to track cryptocurrency prices across multiple exchanges and identify profitable arbitrage opportunities. With real-time price updates and a focus on key metrics, the dashboard enables users to spot and act on price discrepancies between exchanges quickly. It also visualizes the spread trends over time to help users make more informed decisions.
+The **Crypto Arbitrage Dashboard** is a web-based tool designed to track cryptocurrency prices across multiple exchanges and identify profitable arbitrage opportunities. With real-time price updates and a focus on key metrics, the dashboard enables users to spot and act on price discrepancies between exchanges quickly. It also visualizes the spread trends over time to help users make more informed decisions.
 
 ## Features
 
